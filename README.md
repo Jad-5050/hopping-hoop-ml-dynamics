@@ -53,18 +53,21 @@ hopping-hoop-ml-dynamics/
 
 ## 🧮 Dynamics Background
 
-The hoop is modeled as a rigid body of radius \( R \) and mass \( m \) with an eccentricity \( \gamma = e/R \), where \( e \) is the offset of the center of mass.  
+The hoop is modeled as a rigid body of radius **R** and mass **m**, with its center of mass offset by an eccentricity **γ = e/R**.  
 The generalized coordinates are:
-- \( \theta \): angular position
-- \( x \): horizontal displacement of the contact point
+- **θ** — angular position of the hoop  
+- **x** — horizontal displacement of the contact point  
 
-Key constraints:
-\[
-N \ge 0, \quad F_t = \mu N \, \text{sgn}(v_{\text{rel}})
-\]
-Lift-off occurs when \( N = 0 \), defining the transition to the hopping regime.  
-Both **static (\(\mu_s\))** and **kinetic (\(\mu\))** friction coefficients are modeled, with transitions handled automatically when \( |v_{\text{rel}}| > 0 \).
+The system’s motion obeys nonholonomic rolling constraints and experiences Coulomb friction and impacts during lift-off.  
+The governing conditions are:
 
+> **N ≥ 0**, **Fₜ = -μN sgn(v₍rel₎)**  
+
+Lift-off occurs when **N = 0**, marking the transition to the hopping regime.
+
+Both **static friction (μs)** and **kinetic friction (μ)** are modeled.  
+If μs → ∞, the hoop rolls without slipping, preventing hopping entirely.  
+In simulations, μs will be varied within a finite range (typically 0.2–0.8) to explore its influence on transitions between rolling, slipping, and hopping.
 
 ---
 
