@@ -49,7 +49,7 @@ hopping-hoop-ml-dynamics/
 └── docs/
     ├── MECH534_Project_Proposal.pdf
     └── References/
-
+```
 ---
 
 ## 🧮 Dynamics Background
