@@ -23,31 +23,31 @@ This project bridges **classical dynamics** (MECH 620) and **machine learning** 
 
 hopping-hoop-ml-dynamics/
 │
-├── 📄 README.md
+├── README.md
 │
-├── 📁 dynamics_model/
-│ ├── lagrange_derivation_notes/ # Hand derivations & symbolic checks
-│ ├── solver.py # Numerical integration of EOMs
-│ └── utils_physics.py # Friction, impact, constraint helpers
+├── dynamics_model/
+│   ├── lagrange_derivation_notes/         # Hand derivations & symbolic checks
+│   ├── solver.py                          # Numerical integration of EOMs
+│   └── utils_physics.py                   # Friction, impact, constraint helpers
 │
-├── 📁 data/
-│ ├── raw_simulations/ # Raw simulation outputs
-│ ├── processed_dataset.csv # Labeled dataset for ML
-│ └── parameters.json # Parameter sweeps (γ, μ, μs, ω₀)
+├── data/
+│   ├── raw_simulations/                   # Raw simulation outputs
+│   ├── processed_dataset.csv              # Labeled dataset for ML
+│   └── parameters.json                    # Parameter sweeps (γ, μ, μs, ω₀)
 │
-├── 📁 ml_models/
-│ ├── baseline_logistic_regression.ipynb # Baseline linear model
-│ ├── mlp_model.ipynb # Nonlinear MLP classifier
-│ └── temporal_model.ipynb # Markov-inspired model (1D CNN/RNN)
+├── ml_models/
+│   ├── baseline_logistic_regression.ipynb # Baseline linear model
+│   ├── mlp_model.ipynb                    # Nonlinear MLP classifier
+│   └── temporal_model.ipynb               # Markov-inspired model (1D CNN/RNN)
 │
-├── 📁 results/
-│ ├── phase_space_plots/ # Visualization of regime boundaries
-│ ├── model_comparison.csv # Accuracy/loss metrics
-│ └── figures_for_report/ # Final report visuals
+├── results/
+│   ├── phase_space_plots/                 # Visualization of regime boundaries
+│   ├── model_comparison.csv               # Accuracy/loss metrics
+│   └── figures_for_report/                # Final report visuals
 │
-└── 📁 docs/
-├── MECH534_Project_Proposal.pdf
-└── References/
+└── docs/
+    ├── MECH534_Project_Proposal.pdf
+    └── References/
 
 ---
 
