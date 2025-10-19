@@ -119,21 +119,25 @@ These models will be compared in terms of **accuracy**, **interpretability**, an
 4. **Train the ML models**
    jupyter notebook ml_models/baseline_logistic_regression.ipynb
 
+---
+
 ## 🧾 Dependencies
 
-   Python ≥ 3.10
+This project is implemented in **Python 3.10+** and relies on common scientific and machine learning libraries:
 
-   NumPy
+- **NumPy** — numerical computations and array handling  
+- **SciPy** — ODE solvers and event detection  
+- **Matplotlib** — visualization of trajectories and phase-space maps  
+- **Pandas** — data preprocessing and structured dataset handling  
+- **scikit-learn** — baseline ML models (logistic regression, data splitting, metrics)  
+- **PyTorch** *or* **TensorFlow** — for training neural network models  
+- **Jupyter Notebook** *(recommended)* — for interactive experimentation and visualization  
 
-   SciPy
+Optional:
+- **SymPy** — symbolic checks for the Lagrange equations  
+- **Seaborn** — improved visual styling for plots
 
-   Matplotlib
-
-   Pandas
-
-   scikit-learn
-
-   PyTorch or TensorFlow (for advanced ML stages)
+---
 
 ## 🗓️ Timeline Summary
 | Week | Dates        | Key Deliverables                                            |
@@ -144,6 +148,8 @@ These models will be compared in terms of **accuracy**, **interpretability**, an
 | 4    | Nov 10–13    | MLP model + milestone presentation                          |
 | 5    | Nov 14–20    | Temporal model, hyperparameter tuning                       |
 | 6    | Nov 21–26    | Final analysis, report, and presentation                    |
+
+---
 
 ## 📚 References
 
